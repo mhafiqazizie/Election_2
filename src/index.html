@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Sistem Undian Pilihan Raya ke 15</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <!-- <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'> -->
+ <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <script src="../node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+<body class="container">
+ <center><img src="./images/640px-Malaysia_SPR.jpg" class="rounded" alt="..." width="200" height="200"></center> 
+ <center><h1>Sistem Undian Pilihan Raya ke 15 Berasaskan Blockchain</h1></center>
+ <div class="w3-responsive">
+  <table class="w3-table-all">
+   <thead>
+    <tr>
+     <th>Id</th>
+     <th>Parties</th>
+     <th>Votes</th>
+    </tr>
+   </thead>
+   <div id="main"> <!-- refresh starts from div -->   
+   <tbody>
+    <tr>
+     <td id="no1"></td>
+     <td id="no1-nama"></td>
+     <td id="party-1"></td>
+    </tr>
+    <tr>
+     <td id="no2"></td>
+     <td id="no2-nama"></td>
+     <td id="party-2"></td>
+    </tr>
+    <tr>
+     <td id="no3"></td>
+     <td id="no3-nama"></td>
+     <td id="party-3"></td>
+    </tr>
+   </tbody>
+  </div>
+  </table>
+ </div>
+ <!-- <input type="text" id="party" /> -->
+ <select id="party" name="parties">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+ <a href="#" onclick="voteForParty()" class="btn btn-primary">Vote</a>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> //slim version --> 
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+<!-- <script src="../bundle.js"></script> -->
+</html>
